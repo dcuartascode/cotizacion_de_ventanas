@@ -1,0 +1,3 @@
+# Asegúrate de tener Python instalado antes de ejecutar los siguientes comandos
+# Puedes descargar Python desde:
+ https://www.python.org/downloads/
