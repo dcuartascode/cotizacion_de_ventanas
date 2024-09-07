@@ -15,7 +15,7 @@ class Ventana:
     COSTO_ESQUINAS = 4310
     COSTO_CHAPAS = 16200
 
-    def init(self, ancho, largo, estilo, cantidad, acabado_aluminio, tipo_de_vidrio, esmerilado=False):
+    def __init__(self, ancho, largo, estilo, cantidad, acabado_aluminio, tipo_de_vidrio, esmerilado=False):
         self.ancho = ancho
         self.largo = largo
         self.estilo = estilo
@@ -75,4 +75,4 @@ class Ventana:
     def costo_aluminio(self):
         perimetro = 2 * (self.ancho + self.largo) - 8  # Descontar las esquinas
         costo_por_cm = self.ACABADOS_ALUMINIO[self.acabado_aluminio] / 100  # Convertir a costo por cm
-        return perimetro * costo_por_cm*self.cantidad
+        return perimetro * costo_por_cm * self.cantidad
