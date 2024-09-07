@@ -75,4 +75,4 @@ class Ventana:
     def costo_aluminio(self):
         perimetro = 2 * (self.ancho + self.largo) - 8  # Descontar las esquinas
         costo_por_cm = self.ACABADOS_ALUMINIO[self.acabado_aluminio] / 100  # Convertir a costo por cm
-        return perimetro * costo_por_cm * self.cantidad
+        return perimetro * costo_por_cm*self.cantidad
