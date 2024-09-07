@@ -1,6 +1,6 @@
 from naves import Naves
 from ventana import Ventana
-from cliente import Cliente
+from cliente import Cliente  # Importar correctamente desde cliente.py
 
 def ingresar_valores():
     # Solicitar datos del cliente
