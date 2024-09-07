@@ -4,7 +4,7 @@
 
 ## Descripción
 
-Este proyecto tiene como objetivo gestionar los estilos de ventanas y materiales, así como calcular los costos asociados a la fabricación de ventanas. Incluye funcionalidades para la selección de estilos de ventanas, tipos de acabados de aluminio, tipos de vidrio, y la opción de agregar esmerilado al vidrio. Además, permite calcular los costos basados en las dimensiones de las ventanas y aplicar descuentos según la cantidad de unidades.
+Este proyecto tiene como objetivo gestionar la etapa de cotización teniendo en cuenta los estilos de ventanas y materiales, así como calcular los costos asociados a la fabricación de ventanas. Incluye funcionalidades para la selección de estilos de ventanas, tipos de acabados de aluminio, tipos de vidrio, y la opción de agregar esmerilado al vidrio. Además, permite calcular los costos basados en las dimensiones de las ventanas y aplicar descuentos según la cantidad de unidades.
 
 ## Requerimientos
 
