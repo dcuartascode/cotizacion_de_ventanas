@@ -1,7 +1,18 @@
 from naves import Naves
 from ventana import Ventana
+from cliente import Cliente
 
 def ingresar_valores():
+    # Solicitar datos del cliente
+    nombre_cliente = input("Ingrese su nombre: ")
+    cedula_cliente = input("Ingrese su cédula: ")
+    telefono_cliente = input("Ingrese su teléfono: ")
+
+    # Crear instancia de Cliente
+    cliente = Cliente(nombre_cliente, cedula_cliente, telefono_cliente)
+    print(cliente.obtener_info())
+
+    # Solicitar datos de la nave y la ventana
     ancho_nave = float(input("Ingrese el ancho de la nave: "))
     largo_nave = float(input("Ingrese el largo de la nave: "))
 
@@ -27,15 +38,18 @@ def ingresar_valores():
             print("No se aplicó descuento.")
 
         # Generar reporte de cotización
-        generar_reporte(ventana, descuento_aplicado)
+        generar_reporte(cliente, ventana, descuento_aplicado)
 
     except ValueError as e:
         print(e)
 
-def generar_reporte(ventana, descuento_aplicado):
+def generar_reporte(cliente, ventana, descuento_aplicado):
     reporte = f"""
     Reporte de Cotización:
     ----------------------
+    Cliente: {cliente.nombre}
+    Cédula: {cliente.cedula}
+    Teléfono: {cliente.telefono}
     Dimensiones de la ventana: {ventana.ancho} x {ventana.largo} m
     Estilo de la ventana: {ventana.estilo}
     Cantidad de ventanas: {ventana.cantidad}
@@ -47,5 +61,8 @@ def generar_reporte(ventana, descuento_aplicado):
     """
     print(reporte)
 
-# Llamar a la función para ingresar valores
-ingresar_valores()
+def main():
+    ingresar_valores()
+
+if __name__ == "__main__":
+    main()
