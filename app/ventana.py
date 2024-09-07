@@ -15,7 +15,7 @@ class Ventana:
     COSTO_ESQUINAS = 4310
     COSTO_CHAPAS = 16200
 
-    def __init__(self, ancho, largo, estilo, cantidad, acabado_aluminio, tipo_de_vidrio, esmerilado=False):
+    def init(self, ancho, largo, estilo, cantidad, acabado_aluminio, tipo_de_vidrio, esmerilado=False):
         self.ancho = ancho
         self.largo = largo
         self.estilo = estilo

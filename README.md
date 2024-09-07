@@ -49,5 +49,5 @@ Python 3+: Lenguaje de programación principal para el desarrollo de la aplicaci
 Archivo principal donde se ejecutará la aplicación.
 ### ventana.py: 
 Módulo que contiene la clase Ventana, encargada de representar una ventana y realizar los cálculos correspondientes.
-### materiales.py:
- Módulo que contiene los datos de los materiales (aluminio, vidrio, etc.) y sus precios
+### naves.py:
+ Módulo que contiene los calculos.
